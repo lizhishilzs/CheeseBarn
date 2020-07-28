@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Xcode 4.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Products" representedClassName="Products" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="excode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SelfStock" representedClassName="SelfStock" syncable="YES">
+        <attribute name="addtime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="change" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="changerate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="excode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height_price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="in_price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="istop" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="last_price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastclose_price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="low_price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="out_price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StockDish" representedClassName="StockDish" syncable="YES">
+        <attribute name="buy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="decimal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="draw" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="high" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastclose" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="low" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="open" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quotetime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="sell" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updown" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updownrate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="volume" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Products" positionX="-63" positionY="45" width="128" height="105"/>
+        <element name="SelfStock" positionX="-63" positionY="-18" width="128" height="300"/>
+        <element name="StockDish" positionX="-63" positionY="54" width="128" height="345"/>
+    </elements>
+</model>
