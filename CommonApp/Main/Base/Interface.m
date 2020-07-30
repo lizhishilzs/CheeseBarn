@@ -253,10 +253,10 @@ finishedWithMsg:(void (^)(id responseObject, NSString *error))finished {
         [self.shareManger GET:urlStirng parameters:parameters headers:nil progress:nil success:successCallback failure:failureCallBack];
         
     }else if(method == DKInterfaceRequestTypePost){
-        if ([urlStirng containsString:addUrl]) {
-            self.shareManger.requestSerializer = [AFHTTPRequestSerializer serializer];
-            [self.shareManger.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",_CustomerInfo.token] forHTTPHeaderField:@"Authorization"];
-        }
+//        if ([urlStirng containsString:addUrl]) {
+//            self.shareManger.requestSerializer = [AFHTTPRequestSerializer serializer];
+//            [self.shareManger.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",_CustomerInfo.token] forHTTPHeaderField:@"Authorization"];
+//        }
         [self.shareManger POST:urlStirng parameters:parameters headers:nil progress:nil success:successCallback failure:failureCallBack];
     }else{
         [self.shareManger DELETE:urlStirng parameters:parameters headers:nil success:successCallback failure:failureCallBack];
