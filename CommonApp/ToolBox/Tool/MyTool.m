@@ -381,7 +381,7 @@ NSString *bundleShortVersionString() {
         //NSLog(@"path:%@",path);
         //得到完整的文件名
     NSString *fullFileName=[path stringByAppendingPathComponent:filename];
-    NSString *jsonstr = [content JSONRepresentation];
+    NSString *jsonstr = [content toJsonString];
     [jsonstr writeToFile:fullFileName atomically:YES encoding:NSUTF8StringEncoding error:nil];
     fullFileName = nil;
     paths = nil;
@@ -401,7 +401,7 @@ NSString *bundleShortVersionString() {
         //得到完整的文件名
     NSString *fullFileName=[path stringByAppendingPathComponent:filename];
     NSString *jsonstr = [NSString stringWithContentsOfFile:fullFileName encoding:NSUTF8StringEncoding error:nil];
-    NSDictionary *dic = [jsonstr JSONValue];
+    NSDictionary *dic = [jsonstr jsonStringToDictonary];
     fullFileName = nil;
     return dic;
 }

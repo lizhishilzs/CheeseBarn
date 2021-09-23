@@ -11,9 +11,8 @@
 #import "VCManager.h"
 
 #import "BaseNavViewController.h"
-#import "BaseWebViewController.h"
-//#import "LoginVC.h"
-//#import <UShareUI/UShareUI.h>
+
+
 
 
 @implementation DKJumpManager
@@ -38,30 +37,7 @@
     }
 }
 
-+ (void)presentWebVCWithPresentedVC:(UIViewController *)presentedVC
-                              title:(NSString *)title
-                            loadUrl:(NSString *)loadUrl{
-    if (presentedVC) {
-        BaseWebViewController *webVC = [[BaseWebViewController alloc]init];
-        webVC.loadUrl = [NSURL URLWithString:loadUrl];
-        webVC.title = title;
-        [presentedVC presentViewController:[[BaseNavViewController alloc]initWithRootViewController:webVC]
-                                  animated:YES
-                                completion:nil];
-    }
-}
 
-+ (void)pushToWebVCWithNavgationVC:(UINavigationController *)navgationVC
-                             title:(NSString *)title
-                           loadUrl:(NSString *)loadUrl{
-    if (navgationVC) {
-        BaseWebViewController *webVC = [[BaseWebViewController alloc]init];
-        webVC.loadUrl = [NSURL URLWithString:loadUrl];
-        webVC.title = title;
-        [navgationVC pushViewController:webVC animated:YES];
-        [webVC.navigationController setNavigationBarHidden:NO animated:YES];
-    }
-}
 
 //+ (void)showShareUIWithTitle:(NSString *)title desc:(NSString *)desc img:(id)img link:(NSString *)link block:(void (^)(void))success
 //{

@@ -17,7 +17,7 @@
 #import <MJExtension.h>
 //#import "MHDefine.h"
 //#import "MHLogDefine.h"
-#import "SBJson.h"
+
 #import "Interface.h"
 #import "CustomerInfo.h"
 #import "MJRefresh.h"
