@@ -140,11 +140,11 @@ finishedWithMsg:(void (^)(id responseObject, NSString *error))finished {
     NSMutableDictionary *tempDic = [parameters mutableCopy];
     _shareManger.requestSerializer = [AFJSONRequestSerializer serializer];
     
-    if (_CustomerInfo.token.length) {
-        [_shareManger.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",_CustomerInfo.token] forHTTPHeaderField:@"Authorization"];
+    if (_LoginInfo.token.length) {
+        [_shareManger.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",_LoginInfo.token] forHTTPHeaderField:@"Authorization"];
     }
    
-    NSLog(@"######token =====%@   #######",_CustomerInfo.token);
+    NSLog(@"######token =====%@   #######",_LoginInfo.token);
     [self request:method
           baseUrl:baseUrl
         urlString:urlStirng
@@ -165,11 +165,11 @@ finishedWithMsg:(void (^)(id responseObject, NSString *error))finished {
     NSMutableDictionary *tempDic = [parameters mutableCopy];
     _shareManger.requestSerializer = [AFHTTPRequestSerializer serializer];
     
-    if (_CustomerInfo.token.length) {
-        [_shareManger.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",_CustomerInfo.token] forHTTPHeaderField:@"Authorization"];
+    if (_LoginInfo.token.length) {
+        [_shareManger.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",_LoginInfo.token] forHTTPHeaderField:@"Authorization"];
     }
     
-    NSLog(@"######token =====%@   #######",_CustomerInfo.token);
+    NSLog(@"######token =====%@   #######",_LoginInfo.token);
     [self request:method
           baseUrl:baseUrl
         urlString:urlStirng
@@ -207,7 +207,8 @@ finishedWithMsg:(void (^)(id responseObject, NSString *error))finished {
         DKLog(@"%@", urlStirng);
         if ([responseObject isKindOfClass:[NSDictionary class]]) {
             NSLog(@"%@",[responseObject objectForKey:@"code"]);
-            if ([[responseObject objectForKey:@"code"]  isEqualToString:DKInterfaceStatusSuccess]) {
+            NSNumber *getnum = [responseObject objectForKey:@"code"];
+            if ([getnum integerValue] == 2000 || [getnum integerValue] == 0) {
                 if (responseObject &&
                     ![responseObject isKindOfClass:[NSNull class]]) {
                     finished([responseObject objectForKey:@"data"],nil);
@@ -255,7 +256,7 @@ finishedWithMsg:(void (^)(id responseObject, NSString *error))finished {
     }else if(method == DKInterfaceRequestTypePost){
 //        if ([urlStirng containsString:addUrl]) {
 //            self.shareManger.requestSerializer = [AFHTTPRequestSerializer serializer];
-//            [self.shareManger.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",_CustomerInfo.token] forHTTPHeaderField:@"Authorization"];
+//            [self.shareManger.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",_LoginInfo.token] forHTTPHeaderField:@"Authorization"];
 //        }
         [self.shareManger POST:urlStirng parameters:parameters headers:nil progress:nil success:successCallback failure:failureCallBack];
     }else{

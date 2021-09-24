@@ -24,12 +24,12 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.tabBar.backgroundImage = [UIImage imageWithColor:UIColorFromRGB(0xFFFFFF)];
+    //    self.tabBar.backgroundImage = [UIImage imageWithColor:UIColorFromRGB(0xFFFFFF)];
     [self addChildViewControllers];
-//#if DEBUG
-//    // debug 模式下，开启摇一摇切环境的功能
-//    [self startObserveMotion];
-//#endif
+    //#if DEBUG
+    //    // debug 模式下，开启摇一摇切环境的功能
+    //    [self startObserveMotion];
+    //#endif
 }
 
 #pragma mark - 🔒private
@@ -41,19 +41,19 @@
                                          title:@"首页"
                                            tag:0];
     
-    [self setupChildViewControllerWithVcString:@"OrderListVC"
+    [self setupChildViewControllerWithVcString:@"TestViewController1"
                                      imageName:@"tabbar_order"
                                  selectedImage:@"tabbar_order_selected"
                                          title:@"订单"
                                            tag:1];
     
-    [self setupChildViewControllerWithVcString:@"CartVC"
+    [self setupChildViewControllerWithVcString:@"TestViewController2"
                                      imageName:@"tabbar_cart"
                                  selectedImage:@"tabbar_cart_selected"
                                          title:@"购物车"
                                            tag:2];
     
-    [self setupChildViewControllerWithVcString:@"DKMeVC"
+    [self setupChildViewControllerWithVcString:@"TestViewController3"
                                      imageName:@"tabbar_me"
                                  selectedImage:@"tabbar_me_selected"
                                          title:@"我的"
@@ -74,9 +74,19 @@
     vc.tabBarItem.tag = tag;
     
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    
-//    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorFromRGB(0xD01027)} forState:UIControlStateSelected];
-//    [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorFromRGB(0x878787)} forState:UIControlStateNormal];
+    if (@available(iOS 13.0, *)) {
+        // iOS13 及以上
+        //选中颜色
+        self.tabBar.tintColor = [UIColor redColor];
+        //默认颜色
+        self.tabBar.unselectedItemTintColor = UIColorFromRGB(0x878787);
+    }
+    else {
+        // iOS13 以下
+        [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
+        [vc.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorFromRGB(0x878787)} forState:UIControlStateNormal];
+    }
+
     
     BaseNavViewController *nav = [[BaseNavViewController alloc] initWithRootViewController:vc];
     

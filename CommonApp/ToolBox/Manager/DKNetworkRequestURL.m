@@ -33,7 +33,7 @@ NSString *loginPhoneURL = @"/passport/verifyCode";
 /*
  账号密码登录
  */
-NSString *loginURL = @"/login";
+NSString *loginURL = @"/user/login";
 /*
  手机找回密码
  */
@@ -65,7 +65,7 @@ NSString *wxpassport = @"/passport/wxAuth";
 /*
  获取用户信息
  */
-NSString *getuserInfo = @"/u/profile";
+NSString *getuserInfo = @"/user/getInfo";
 
 
 

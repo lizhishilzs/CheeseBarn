@@ -16,6 +16,10 @@
 		D984DB7C24CAC20200127007 /* CommonAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D984DB7B24CAC20200127007 /* CommonAppUITests.m */; };
 		D984DB8C24CAD8DF00127007 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D984DB8B24CAD8DF00127007 /* RootTabBarController.m */; };
 		D984DB8F24CAD92000127007 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D984DB8E24CAD92000127007 /* BaseNavViewController.m */; };
+		D98BCD0A26FD965500F2D520 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D98BCD0926FD965500F2D520 /* LoginModel.m */; };
+		D9D90BF326FC6408007C63FB /* TestViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D90BF226FC6408007C63FB /* TestViewController1.m */; };
+		D9D90BF926FC6414007C63FB /* TestViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D90BF826FC6414007C63FB /* TestViewController2.m */; };
+		D9D90BFF26FC641E007C63FB /* TestViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D90BFE26FC641E007C63FB /* TestViewController3.m */; };
 		D9FA8AC624CEB7B6008A254B /* CustomerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FA8AC524CEB7B6008A254B /* CustomerInfo.m */; };
 		D9FA8AC924CEB7C8008A254B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FA8AC824CEB7C8008A254B /* BaseViewController.m */; };
 		D9FA8ACC24CEB852008A254B /* RootViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FA8ACB24CEB852008A254B /* RootViewcontroller.m */; };
@@ -119,6 +123,14 @@
 		D984DB8B24CAD8DF00127007 /* RootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBarController.m; sourceTree = "<group>"; };
 		D984DB8D24CAD91F00127007 /* BaseNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavViewController.h; sourceTree = "<group>"; };
 		D984DB8E24CAD92000127007 /* BaseNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavViewController.m; sourceTree = "<group>"; };
+		D98BCD0826FD965500F2D520 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		D98BCD0926FD965500F2D520 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		D9D90BF126FC6408007C63FB /* TestViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController1.h; sourceTree = "<group>"; };
+		D9D90BF226FC6408007C63FB /* TestViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController1.m; sourceTree = "<group>"; };
+		D9D90BF726FC6414007C63FB /* TestViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController2.h; sourceTree = "<group>"; };
+		D9D90BF826FC6414007C63FB /* TestViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController2.m; sourceTree = "<group>"; };
+		D9D90BFD26FC641E007C63FB /* TestViewController3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController3.h; sourceTree = "<group>"; };
+		D9D90BFE26FC641E007C63FB /* TestViewController3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController3.m; sourceTree = "<group>"; };
 		D9FA8AC324CEB617008A254B /* CommonAppPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonAppPrefixHeader.pch; sourceTree = "<group>"; };
 		D9FA8AC424CEB7B5008A254B /* CustomerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerInfo.h; sourceTree = "<group>"; };
 		D9FA8AC524CEB7B6008A254B /* CustomerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerInfo.m; sourceTree = "<group>"; };
@@ -321,6 +333,7 @@
 		D984DB5324CAC1FC00127007 /* CommonApp */ = {
 			isa = PBXGroup;
 			children = (
+				D9D90BE726FC63AE007C63FB /* Classes */,
 				D9FA8ACE24CEBF3D008A254B /* ToolBox */,
 				D9FA8AC124CEB20A008A254B /* Supporting Files */,
 				D984DB8924CAD7A800127007 /* Main */,
@@ -357,9 +370,40 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		D98BCD0726FD963D00F2D520 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D9D90BE726FC63AE007C63FB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D98BCD0726FD963D00F2D520 /* model */,
+				D9D90BE826FC63BD007C63FB /* controller */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D9D90BE826FC63BD007C63FB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9D90BF126FC6408007C63FB /* TestViewController1.h */,
+				D9D90BF226FC6408007C63FB /* TestViewController1.m */,
+				D9D90BF726FC6414007C63FB /* TestViewController2.h */,
+				D9D90BF826FC6414007C63FB /* TestViewController2.m */,
+				D9D90BFD26FC641E007C63FB /* TestViewController3.h */,
+				D9D90BFE26FC641E007C63FB /* TestViewController3.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		D9FA8AC024CEA1B7008A254B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D98BCD0826FD965500F2D520 /* LoginModel.h */,
+				D98BCD0926FD965500F2D520 /* LoginModel.m */,
 				D9FA8AC724CEB7C7008A254B /* BaseViewController.h */,
 				D9FA8AC824CEB7C8008A254B /* BaseViewController.m */,
 				D984DB8A24CAD8DE00127007 /* RootTabBarController.h */,
@@ -502,11 +546,11 @@
 			isa = PBXGroup;
 			children = (
 				D9FA8B0C24CECC5A008A254B /* UIButton+ImageTitleSpacing.h */,
-				D9FA8B0D24CECC5A008A254B /* UIButton+Layout.m */,
-				D9FA8B0E24CECC5A008A254B /* UIButton+timer.m */,
 				D9FA8B0F24CECC5A008A254B /* UIButton+ImageTitleSpacing.m */,
 				D9FA8B1024CECC5A008A254B /* UIButton+Layout.h */,
+				D9FA8B0D24CECC5A008A254B /* UIButton+Layout.m */,
 				D9FA8B1124CECC5A008A254B /* UIButton+timer.h */,
+				D9FA8B0E24CECC5A008A254B /* UIButton+timer.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -525,11 +569,11 @@
 		D9FA8B1724CECC5A008A254B /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				D9FA8B1824CECC5A008A254B /* UIView+LTLoading.h */,
 				D9FA8B1924CECC5A008A254B /* UIView+Coordinate.h */,
-				D9FA8B1A24CECC5A008A254B /* UIView+Response.h */,
 				D9FA8B1B24CECC5A008A254B /* UIView+Coordinate.m */,
+				D9FA8B1824CECC5A008A254B /* UIView+LTLoading.h */,
 				D9FA8B1C24CECC5A008A254B /* UIView+LTLoading.m */,
+				D9FA8B1A24CECC5A008A254B /* UIView+Response.h */,
 				D9FA8B1D24CECC5A008A254B /* UIView+Response.m */,
 			);
 			path = UIView;
@@ -603,14 +647,14 @@
 		D9FA8B4C24CECC5A008A254B /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
-				D9FA8B4D24CECC5A008A254B /* NSDateFormatter+LT.m */,
 				D9FA8B4E24CECC5A008A254B /* NSDate+extension.h */,
-				D9FA8B4F24CECC5A008A254B /* NSString+LTDate.m */,
+				D9FA8B5224CECC5A008A254B /* NSDate+extension.m */,
+				D9FA8B5424CECC5A008A254B /* NSDate+LT.h */,
 				D9FA8B5024CECC5A008A254B /* NSDate+LT.m */,
 				D9FA8B5124CECC5A008A254B /* NSDateFormatter+LT.h */,
-				D9FA8B5224CECC5A008A254B /* NSDate+extension.m */,
+				D9FA8B4D24CECC5A008A254B /* NSDateFormatter+LT.m */,
 				D9FA8B5324CECC5A008A254B /* NSString+LTDate.h */,
-				D9FA8B5424CECC5A008A254B /* NSDate+LT.h */,
+				D9FA8B4F24CECC5A008A254B /* NSString+LTDate.m */,
 			);
 			path = NSDate;
 			sourceTree = "<group>";
@@ -787,6 +831,7 @@
 				TargetAttributes = {
 					D984DB5024CAC1FC00127007 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1230;
 					};
 					D984DB6B24CAC20100127007 = {
 						CreatedOnToolsVersion = 11.6;
@@ -932,6 +977,7 @@
 				D9FA8BCE24CECE9E008A254B /* NSString+Base64.m in Sources */,
 				D9FA8B7924CECC5A008A254B /* NSString+LTDate.m in Sources */,
 				D9FA8B5E24CECC5A008A254B /* UIColor+MHCommon.m in Sources */,
+				D9D90BF926FC6414007C63FB /* TestViewController2.m in Sources */,
 				D9FA8B7224CECC5A008A254B /* UINavigationController+extension.m in Sources */,
 				D984DB8F24CAD92000127007 /* BaseNavViewController.m in Sources */,
 				D9FA8BC624CECE9E008A254B /* EncryptionTools.m in Sources */,
@@ -955,9 +1001,12 @@
 				D9FA8BCF24CECE9E008A254B /* NSData+CommonCrypto.m in Sources */,
 				D9FA8B6A24CECC5A008A254B /* NSString+Substring.m in Sources */,
 				D9FA8BC524CECE9E008A254B /* NSString+MD5.m in Sources */,
+				D98BCD0A26FD965500F2D520 /* LoginModel.m in Sources */,
+				D9D90BFF26FC641E007C63FB /* TestViewController3.m in Sources */,
 				D9FA8B5F24CECC5A008A254B /* UIColor+HexString.m in Sources */,
 				D9FA8B7824CECC5A008A254B /* NSDateFormatter+LT.m in Sources */,
 				D984DB6724CAC20100127007 /* main.m in Sources */,
+				D9D90BF326FC6408007C63FB /* TestViewController1.m in Sources */,
 				D9FA8B6F24CECC5A008A254B /* NSString+ABStr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1121,6 +1170,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQES7G2G6Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1132,6 +1182,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cheeseli.CommonApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1142,6 +1194,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQES7G2G6Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1153,6 +1206,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cheeseli.CommonApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -33,28 +33,23 @@ typedef NS_ENUM(NSUInteger,PlatformType) {
 /*
  API地址
   **/
-//http://ip-73-farm-1.coralcodes.com/api
-//http://ip-29-shanhuquan-app.coralcodes.com
-//http://app.shanhuquan.com
-#define BASE_URL     @"http://ip-29-laboratory-app.coralcodes.com"
+
+#define BASE_URL     @"https://shop-api.urdts.cn"
 
 
 /*
  图片开发服务器 : http://qihuo-test.oss-cn-shanghai.aliyuncs.com/
- 图片正式服务器 : http://qihuo-product.oss-cn-shanghai.aliyuncs.com/ http://ip-29-shanhuquan-app.coralcodes.com
- http://app.shanhuquan.com
+ 图片正式服务器 : http://qihuo-product.oss-cn-shanghai.aliyuncs.com/
  **/
-#define BASE_PIC_URL @"http://ip-29-laboratory-app.coralcodes.com"
+#define BASE_PIC_URL @""
 
 
 /**
  H5开发服务器 : http://106.15.158.85:800/
- H5正式服务器 : http://qihuo.DKsudai.com/ https://ip-29-shanhuquan-front.coralcodes.com
- https://www.shanhuquan.com 
+ H5正式服务器 : http://qihuo.DKsudai.com/
  */
-#define BASE_WEB_URL @"http://ip-29-laboratory-app.coralcodes.com" //
+#define BASE_WEB_URL @"" //
 
-#define Shake_Open 0 // 摇一摇切换环境开关,1为开 0为关
 
 #import <Foundation/Foundation.h>
 
