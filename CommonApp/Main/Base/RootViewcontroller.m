@@ -40,7 +40,8 @@
 //    NSDictionary *getidc = @{@"myid":@"test1"};
 //    NSArray * array = @[1, 2];
 //    [self loadData];
-    
+    NSLog(@"bottomheight:%f",[DKGloablConfig Bottomheight]);
+    NSLog(@"version:%f",[[[UIDevice currentDevice]systemVersion] floatValue]);
 }
 
 -(void)loadData{

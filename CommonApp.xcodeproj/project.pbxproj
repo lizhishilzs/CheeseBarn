@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A60517C7679DAC4F6C66AB9F /* libPods-CommonApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3708DDFEB6CA3E0AD4E75E48 /* libPods-CommonApp.a */; };
 		D97CD50D24CEDFFE00E97942 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97CD50F24CEDFFE00E97942 /* LaunchScreen.storyboard */; };
 		D984DB5624CAC1FC00127007 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D984DB5524CAC1FC00127007 /* AppDelegate.m */; };
 		D984DB6124CAC20100127007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D984DB6024CAC20100127007 /* Assets.xcassets */; };
@@ -17,6 +16,8 @@
 		D984DB8C24CAD8DF00127007 /* RootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D984DB8B24CAD8DF00127007 /* RootTabBarController.m */; };
 		D984DB8F24CAD92000127007 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D984DB8E24CAD92000127007 /* BaseNavViewController.m */; };
 		D98BCD0A26FD965500F2D520 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D98BCD0926FD965500F2D520 /* LoginModel.m */; };
+		D98BCD3726FDB0C600F2D520 /* UserBaseviewVc.m in Sources */ = {isa = PBXBuildFile; fileRef = D98BCD3626FDB0C600F2D520 /* UserBaseviewVc.m */; };
+		D98BCD4626FDB6B100F2D520 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98BCD4526FDB6B100F2D520 /* NextViewController.m */; };
 		D9D90BF326FC6408007C63FB /* TestViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D90BF226FC6408007C63FB /* TestViewController1.m */; };
 		D9D90BF926FC6414007C63FB /* TestViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D90BF826FC6414007C63FB /* TestViewController2.m */; };
 		D9D90BFF26FC641E007C63FB /* TestViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D90BFE26FC641E007C63FB /* TestViewController3.m */; };
@@ -104,7 +105,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3708DDFEB6CA3E0AD4E75E48 /* libPods-CommonApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommonApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DE9F0000BCE408983E7EB6 /* Pods-CommonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonApp.release.xcconfig"; path = "Target Support Files/Pods-CommonApp/Pods-CommonApp.release.xcconfig"; sourceTree = "<group>"; };
 		D97CD50E24CEDFFE00E97942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D984DB5124CAC1FC00127007 /* CommonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +125,10 @@
 		D984DB8E24CAD92000127007 /* BaseNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavViewController.m; sourceTree = "<group>"; };
 		D98BCD0826FD965500F2D520 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		D98BCD0926FD965500F2D520 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		D98BCD3526FDB0C600F2D520 /* UserBaseviewVc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserBaseviewVc.h; sourceTree = "<group>"; };
+		D98BCD3626FDB0C600F2D520 /* UserBaseviewVc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserBaseviewVc.m; sourceTree = "<group>"; };
+		D98BCD4426FDB6B100F2D520 /* NextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		D98BCD4526FDB6B100F2D520 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		D9D90BF126FC6408007C63FB /* TestViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController1.h; sourceTree = "<group>"; };
 		D9D90BF226FC6408007C63FB /* TestViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController1.m; sourceTree = "<group>"; };
 		D9D90BF726FC6414007C63FB /* TestViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController2.h; sourceTree = "<group>"; };
@@ -270,7 +274,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60517C7679DAC4F6C66AB9F /* libPods-CommonApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +297,6 @@
 		3355DFB73CE13E2AA0F61B9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3708DDFEB6CA3E0AD4E75E48 /* libPods-CommonApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -395,6 +397,10 @@
 				D9D90BF826FC6414007C63FB /* TestViewController2.m */,
 				D9D90BFD26FC641E007C63FB /* TestViewController3.h */,
 				D9D90BFE26FC641E007C63FB /* TestViewController3.m */,
+				D98BCD3526FDB0C600F2D520 /* UserBaseviewVc.h */,
+				D98BCD3626FDB0C600F2D520 /* UserBaseviewVc.m */,
+				D98BCD4426FDB6B100F2D520 /* NextViewController.h */,
+				D98BCD4526FDB6B100F2D520 /* NextViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -937,10 +943,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9FA8B6124CECC5A008A254B /* UIView+LTLoading.m in Sources */,
+				D98BCD4626FDB6B100F2D520 /* NextViewController.m in Sources */,
 				D9FA8B7524CECC5A008A254B /* NSObject+path.m in Sources */,
 				D9FA8B6524CECC5A008A254B /* NSDictionary+SafeObject.m in Sources */,
 				D9FA8B7024CECC5A008A254B /* NSString+ObjcSugar.m in Sources */,
 				D9FA8B6724CECC5A008A254B /* UIBarButtonItem+extension.m in Sources */,
+				D98BCD3726FDB0C600F2D520 /* UserBaseviewVc.m in Sources */,
 				D9FA8B5824CECC5A008A254B /* UIImage+MHScreenshot.m in Sources */,
 				D9FA8B7124CECC5A008A254B /* NullSafe.m in Sources */,
 				D9FA8B5B24CECC5A008A254B /* UIButton+Layout.m in Sources */,
@@ -1104,7 +1112,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1156,7 +1164,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1176,6 +1184,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CommonApp/Supporting Files/CommonAppPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CommonApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1200,6 +1209,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CommonApp/Supporting Files/CommonAppPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CommonApp/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

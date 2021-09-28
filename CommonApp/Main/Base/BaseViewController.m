@@ -93,6 +93,7 @@ static char *btnClickAction;
     [self setCustomButton:self.navLeftBtn Title:title Image:image SelectedImage:selectedImage];
     [self.navLeftBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.navLeftBtn];
+    
 }
 
 -(void)setRightButtonWithTitle:(NSString *)title

@@ -15,3 +15,23 @@ NSString *DKURLSCHEME = @"DK"; // 协议头
 NSString *DKURLJumpHost = @"jump"; // jump动作
 NSString *DKURLOpenWeb = @"/openWeb"; // 跳H5
 
+
+@implementation DKGloablConfig
++ (CGFloat)Bottomheight
+{
+    if (@available(iOS 11.0, *)) {
+        return UIApplication.sharedApplication.delegate.window.safeAreaInsets.bottom;
+    }else{
+        return  0;
+    }
+}
++ (CGFloat)Topheight
+{
+    if (@available(iOS 11.0, *)) {
+        return UIApplication.sharedApplication.delegate.window.safeAreaInsets.top;
+    }else{
+        return  0;
+    }
+}
+@end
+

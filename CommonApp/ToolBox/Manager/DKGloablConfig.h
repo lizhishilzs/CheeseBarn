@@ -54,6 +54,7 @@ alpha:(CGFloat)a]
 #define ScaleX   mainWidth/375
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define IS_IPHONE_X (IS_IPHONE && mainHeight == 812.0)
+
 #define X_foot   39
 #define X_head   44
 
@@ -78,9 +79,18 @@ alpha:(CGFloat)a]
 #define NavBar_Height  44
 #define StatusBar_Height  [[UIApplication sharedApplication] statusBarFrame].size.height
 
+#define NavHeight UIApplication.sharedApplication.statusBarFrame.size.height
+//#define Bottomheight  UIApplication.sharedApplication.delegate.window.safeAreaInsets.bottom
 
 extern NSString *DKDeviceToken;
 extern NSString *DKURLSCHEME; // 协议头
 extern NSString *DKURLJumpHost; // jump动作
 extern NSString *DKURLOpenWeb; // 跳H5
+@interface DKGloablConfig : NSObject
++(CGFloat)Bottomheight;
++(CGFloat)Topheight;
+@end
 
+/*
+ 通知名称
+ */
